@@ -1,9 +1,9 @@
 server {
 
-        root /home/www/dev.thingtosell.com/web;
+        root /home/www/fbdev.thingtosell.com/web;
         index index.html index.htm;
 
-        server_name dev.thingtosell.com;
+        server_name fbdev.thingtosell.com;
 
 #add_header X-Frame-Options "ALLOW-FROM https://apps.facebook.com/";
 #add_header Frame-Options "ALLOW-FROM https://apps.facebook.com/";
@@ -20,7 +20,7 @@ add_header Frame-Options "ALLOW-FROM ALLOWALL";
                 proxy_cache_bypass $http_upgrade;
         }
 
-    access_log /home/www/shared/log/dev.thingtosell-access.log;
-    error_log /home/www/shared/log/dev.thingtosell-error.log;
+    access_log /home/www/shared/log/fbdev.thingtosell-access.log;
+    error_log /home/www/shared/log/fbdev.thingtosell-error.log;
     error_page 404 /404.html;
 }
