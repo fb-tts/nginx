@@ -5,11 +5,8 @@ server {
 
         server_name fbdev.thingtosell.com;
 
-#add_header X-Frame-Options "ALLOW-FROM https://apps.facebook.com/";
-#add_header Frame-Options "ALLOW-FROM https://apps.facebook.com/";
-
-add_header X-Frame-Options "ALLOW-FROM ALLOWALL";
-add_header Frame-Options "ALLOW-FROM ALLOWALL";
+add_header X-Frame-Options "ALLOW-FROM https://apps.facebook.com/";
+add_header Frame-Options "ALLOW-FROM https://apps.facebook.com/";
 
         location /      {
                 proxy_pass http://127.0.0.1:3010;
